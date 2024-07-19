@@ -1,0 +1,19 @@
+=============================================================================
+This message contain the information about how to publish the applet. Please read it carefully!
+All necessary files be saved in the same directory the project file (*.afb) in. If you still not
+save the current project, save it first! This message will aslo be saved in a text file along with
+project file named "ProjectName_PublishReport.txt".
+=============================================================================
+
+[Applet class and archive file(s)]: Archive file be used for newer browser such as IE4+ or Netscape4+
+  floatmenu.jar
+  floatmenu.class
+  
+
+[Image File(s)]: They should be copied to the same directory the applet class file in!
+
+[Audio File(s)]: They should be copied to the same directory the applet class file in!
+
+=============================================================================
+End of Publish Report
+=============================================================================

@@ -1,0 +1,127 @@
+Note: This file be created and maintained by Applet FloatingMenu Builder,
+please do not modify it by yourself, otherwise the project file may not
+be opened correctly! Thanks!. 
+--------------- General Description Start ---------------
+Name = Applet FloatingMenu Builder
+Version = 10 
+--------------- General Description End ---------------
+--------------- Structure Description Start ---------------
+Applet FloatingMenu Builder
+	ChangePass
+--------------- Structure Description End ---------------
+--------------- Applet Parameter Description Start ---------------
+1
+FFFFFF
+
+
+0
+0
+0
+
+Loading...
+000000
+FFFFFF
+0
+
+0
+
+F4BE1A
+FFFFFF
+000000
+000000
+0
+0
+
+0
+
+FFFFFF
+1
+0
+0
+80
+20
+0
+FFFFFF
+FFFFFF
+0
+0
+0
+0
+000000
+
+5
+
+3
+
+0000CA
+0
+12
+0
+0
+1
+FFFFFF
+FFFFFF
+0
+0
+0
+0
+000000
+
+5
+
+3
+
+6666FF
+0
+12
+0
+0
+1
+FFFFFF
+FFFFFF
+0
+0
+0
+0
+000000
+
+5
+
+4
+
+6666FF
+0
+12
+0
+0
+1
+319
+20
+0
+0
+0
+0
+0
+0
+0
+14
+0
+--------------- Applet Parameter Description End ---------------
+--------------- Item Parameter Description Start ---------------
+1
+Item 4
+
+_self
+
+
+
+
+
+
+5
+5
+
+
+0
+0
+--------------- Item Parameter Description End ---------------

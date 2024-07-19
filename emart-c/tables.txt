@@ -1,0 +1,4 @@
+create table Users(
+USERID	VARCHAR(20)	PRIMARY KEY	,
+PASSWORD	VARCHAR(20)	NOT NULL,
+typs varchar(1));

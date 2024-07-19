@@ -1,0 +1,27 @@
+Definition
+
+
+The Y2K38 problem has been described as a non-problem, given that we are expected to be running 64-bit operating systems well before 2038. Well, maybe. 
+
+The Problem
+Just as Y2K problems arise from programs not allocating enough digits to the year, Y2K38 problems arise from programs not allocating enough bits to internal time.Unix internal time is commonly stored in a data structure using a long int containing the number of seconds since 1970. This time is used in all time-related processes such as scheduling, file timestamps, etc. In a 32-bit machine, this value is sufficient to store time up to 18-jan-2038. After this date, 32-bit clocks will overflow and return erroneous values such as 32-dec-1969 or 13-dec-1901. 
+
+
+Machines Affected Currently (March 1998) there are a huge number of machines affected. Most of these will be scrapped before 2038. However, it is possible that some machines going into service now may still be operating in 2038. These may include process control computers, space probe computers, embedded systems in traffic light controllers, navigation systems etc. etc. Many of these systems may not be upgradeable. For instance, Ferranti Argus computers survived in service longer than anyone expected; long enough to present serious maintenance problems. 
+
+
+Note: Unix time is safe for the indefinite future for referring to future events, provided that enough bits are allocated. Programs or databases with a fixed field width should probably allocate at least 48 bits to storing time values. 
+Hardware, such as clock circuits, which has adopted the Unix time convention, may also be affected if 32-bit registers are used. 
+
+
+In my opinion, the Y2K38 threat is more likely to result in aircraft falling from the sky, glitches in life-support systems, and nuclear power plant meltdown than the Y2K threat, which is more likely to disrupt inventory control, credit card payments, pension plans etc. The reason for this is that the Y2K38 problem involves the basic system timekeeping from which most other time and date information is derived, while the Y2K problem (mostly) involves application programs. 
+Emulation and Megafunctions
+While 32-bit CPUs may be obsolete in desktop computers and servers by 2038, they may still exist in microcontrollers and embedded circuits. For instance, the Z80 processor is still available in 1999 as an Embedded Function within Altera programmable devices. Such embedded functions present a serious maintenance problem for Y2K38 and similar rollover issues, since the package part number and other markings typically give no indication of the internal function. 
+
+Software Issues
+Databases using 32-bit Unix time may survive through 2038. Care will have to be taken to avoid rollover issues.
+
+Now that we've far surpassed the problem of "Y2K," can you believe that computer scientists and theorists are now projecting a new worldwide computer glitch for the year 2038? Commonly called the "Y2K38 Problem," it seems that computers using "long int" time systems, which were set up to start recording time from January 1, 1970 will be affected.
+
+ 
+

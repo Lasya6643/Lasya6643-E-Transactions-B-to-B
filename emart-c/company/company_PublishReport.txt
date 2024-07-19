@@ -1,0 +1,22 @@
+=============================================================================
+This message contain the information about how to publish the Javascript menu. Please read it carefully!
+All necessary files be saved in the same directory the project file (*.jpb) in. If you still not
+save the current project, save it first! This message will aslo be saved in a text file along with
+project file named "ProjectName_PublishReport.txt".
+=============================================================================
+
+[Javascript menu script file(s)]:
+  jpbcfg.js
+  jpbparams.js
+  jpbie.js
+  jpbmo.js
+  jpbop.js
+
+[Image File(s)]: They should be copied to the same directory the script file in!
+  arrow_normal.gif
+  arrow_over.gif
+
+
+=============================================================================
+End of Publish Report
+=============================================================================

@@ -1,0 +1,14 @@
+createMenuGlobalParams(1000,20,10,1,1,3,1,0,"",1,200,2000,10,15,"","","","","",1,"Center","#2EA5D1","#FFFFFF","Arial",12,1,0,"move","Hold your mouse to move!","Welcome...",0,"",0,0,"#0080C0","#0080C0","#0080C0","#003E5D","#003E5D","#","#00C0FF","#00C0FF","#005986","#005986","arrow_normal.gif","arrow_over.gif","#FFFFFF","#0080C0","#C0C0C0","#000000",4,"Arial",12,0,0,"#FFFFFF","#0080C0","#EAEA00","#000000","",180,20,"",20,190,2,"ridge","#FFFF00","");
+createItem('ChangePass','','','','','','','','','','','','','',0,'',105,4,0,0,1,1,120,0,'','','changepass.jsp','_self','','','','','','changepass.jsp');
+createItem('Email','','','','','','','','','','','','','',1,'',105,4,0,0,0,0,120,0,'','','email.jsp','_self','','','','','','email.jsp');
+createItem('','','','','','','','','','','','','','',1,'',105,4,0,0,0,0,120,0,'','','','_self','','','','','','');
+createItem('','','','','','','','','','','','','','',1,'',105,4,0,0,2,0,120,0,'','','','_self','','','','','','');
+createItem('Inbox','','','','','','','','','','','','','',0,'',105,4,0,0,1,0,120,0,'','','user_inbox.jsp','_self','','','','','','user_inbox.jsp');
+createItem('Compose','','','','','','','','','','','','','',0,'',105,4,0,0,2,0,120,0,'','','user_message.jsp','_self','','','','','','user_message.jsp');
+createItem('NewTenders','','','','','','','','','','','','','',0,'',105,4,0,0,1,0,120,0,'','','newtend.jsp','_self','','','','','','newtend.jsp');
+createItem('ViewTenders','','','','','','','','','','','','','',0,'',105,4,0,0,0,0,120,0,'','','viewtend.jsp','_self','','','','','','viewtend.jsp');
+createItem('LostTenders','','','','','','','','','','','','','',0,'',105,4,0,0,2,0,120,0,'','','canceltend.jsp','_self','','','','','','canceltend.jsp');
+createItem('AppliedTenders','','','','','','','','','','','','','',0,'',105,4,0,0,1,0,120,0,'','','applytendreport.jsp','_self','','','','','','applytendreport.jsp');
+createItem('AllTenders','','','','','','','','','','','','','',0,'',105,4,0,0,0,0,120,0,'','','alltendreport.jsp','_self','','','','','','alltendreport.jsp');
+createItem('AllotedTenders','','','','','','','','','','','','','',0,'',105,4,0,0,0,0,120,0,'','','allotedtendreport.jsp','_self','','','','','','allotedtendreport.jsp');
+createItem('CanceledTenders','','','','','','','','','','','','','',0,'',105,4,0,0,2,0,120,0,'','','canceltendreport.jsp','_self','','','','','','canceltendreport.jsp');

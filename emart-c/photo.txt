@@ -1,0 +1,201 @@
+<link href="ksrm.css" rel="stylesheet">
+
+<%@page import="java.sql.*;"%>
+<html>
+<head>
+<script language="javascript">
+function enableAll()
+{
+document.sai.sno.disabled=false;
+document.sai.name.disabled=false;
+document.sai.sex.disabled=false;
+document.sai.address.disabled=false;
+document.sai.bloodgroup.disabled=false;
+document.sai.emailid.disabled=false;
+document.sai.fathersname.disabled=false;
+document.sai.phonenumber.disabled=false;
+document.sai.doj.disabled=false;
+document.sai.eamcetrank.disabled=false;
+document.sai.interpercentage.disabled=false;
+document.sai.sscpercentage.disabled=false;
+document.sai.acheivements.disabled=false;
+document.sai.hobbies.disabled=false;
+document.sai.photo.disabled=false;
+document.sai.sno.focus();
+}
+function formvalid()
+{
+var sno=document.sai.sno.value;
+var name=document.sai.name.value;
+var sex=document.sai.sex.value;
+var address=document.sai.address.value;
+var bloodgroup=document.sai.bloodgroup.value;
+var emailid=document.sai.emailid.value;
+var fathersname=document.sai.fathersname.value;
+var phonenumber=document.sai.phonenumber.value;
+var doj=document.sai.doj.value;
+var eamcetrank=document.sai.eamcetrank.value;
+var interpercentage=document.sai.interpercentage.value;
+var sscpercentage=document.sai.sscpercentage.value;
+var acheivements=document.sai.acheivements.value;
+var hobbies=document.sai.hobbies.value;
+var photo=document.sai.photo.value;
+if((sno.length==0)||(name.length==0)||(sex.length==0)||(address.length==0)||(bloodgroup.length==0)||(emailid.length==0)||(fathersname.length==0)||(phonenumber.length==1)||(doj.length==0)||(eamcetrank.length==1)||(interpercentage.length==1)||(sscpercentage.length==1)||(acheivements.length==0)||(hobbies.length==0)||(photo.length==0))
+{
+alert('fill the form completely')
+return false;
+}
+else
+return true;
+}
+
+function setcolor()
+{
+sai.address.style["background"]="aliceblue";
+sai.address.style["height"]=100;
+}
+
+function relcolor()
+{
+sai.address.style["background"]="linen";
+sai.address.style["height"]=35;
+}
+
+function ph()
+{
+var image=document.sai.photo.value;
+document.sai.x.src = "images/" + image;
+}
+
+
+function dd() 
+{
+sai.MonthView1.style.visibility = "Visible"
+}
+
+function MonthView1_Click()
+{
+var mon,yer;
+mon = sai.MonthView1.month;
+
+if(mon==1)
+  mon='jan';
+else
+if(mon==2)
+  mon='feb';
+else
+if(mon==3)
+  mon='mar';
+else
+if(mon==4)
+  mon='apr';
+else
+if(mon==5)
+  mon='may';
+else
+if(mon==6)
+  mon='jun';
+else
+if(mon==7)
+  mon='jul';
+else
+if(mon==8)
+  mon='aug';
+else
+if(mon==9)
+  mon='sep';
+else
+if(mon==10)
+  mon='oct';
+else
+if(mon==11)
+ mon='nov';
+else
+if(mon==12)
+  mon='dec';
+
+yer="'" + sai.MonthView1.Year +  "'";
+
+document.sai.doj.value = sai.MonthView1.day + "-" + mon + "-" + yer.substr(3,2);
+sai.MonthView1.style.visibility = "Hidden";
+}
+
+</script>
+
+<SCRIPT LANGUAGE=javascript FOR=MonthView1 EVENT=Click>
+ MonthView1_Click();
+</SCRIPT>
+</head>
+
+<body >
+<form name =sai method=post action=personal1.jsp onSubmit='return formvalid()'>
+<table border=1 align=center style="position:absolute;top:8;left:3";>
+<caption align=center><u>Personal Information</u></caption>
+	<tr>
+		<td><small>Student Number</small></td>
+		<td><input type=text disabled name=sno></td>
+		<td><small>Student Name</small></td>
+		<td><input type=text disabled name=name></td>
+	</tr>
+	
+	<tr>
+		<td><small>Sex</small></td>
+		<td><select disabled name=sex>
+			<option value=1>
+			<option value=2>Male
+			<option value=3>Female
+			</select></td>
+		<td><small>Address</small></td>
+		<td><textarea onblur="relcolor()" onfocus="setcolor()" name=address disabled></textarea></td>
+	</tr>
+
+	<tr>
+		<td><small>Blood Group</small></td>
+		<td><input type=text disabled name=bloodgroup></td>
+		<td><small>Email Id</small></td>
+		<td><input type=text disabled name=emailid></td>
+	</tr>
+	
+	<tr>
+		<td><small>Fathers Name</small></td>
+		<td><input type=text disabled name=fathersname></td>
+		<td><small>Phone Number</small></td>
+		<td><input type=text disabled name=phonenumber></td>
+	</tr>
+	
+	<tr>
+		<td><small>Date of Join</small></td>
+		<td><input type=text disabled name=doj onfocus='dd();'></td>
+		<td><small>EAMCET Rank</small></td>
+		<td><input type=text disabled name=eamcetrank></td>
+	</tr>
+
+	<tr>
+		<td><small>Inter percentage</small></td>
+		<td><input type=text disabled name=interpercentage></td>
+		<td><small>S.S.C Percentage</small></td>
+		<td><input type=text disabled name=sscpercentage></td>
+	</tr>
+
+	<tr>
+		<td><small>Acheivements</small></td>
+		<td><input type=text disabled name=acheivements></td>
+		<td><small>Hobbies</small></td>
+		<td><input type=text disabled name=hobbies></td>
+	</tr>
+
+</table>
+<table border=1 style="position:absolute;top:75;left:370";>
+<tr>
+<td>Photo</td>
+<td><input name=photo type=text size=20 onblur="ph()" disabled>
+</td>
+<td><img name=x src="" height=80 width=80></td>
+</tr>
+</table>
+<OBJECT id=MonthView1 classid=clsid:8E27C92B-1264-101C-8A2F-040224009C02 style="position:absolute;top:100;left:200;VISIBILITY: hidden;"  width=270 ></object>
+<input type=button value=AddNew class=border onclick=enableAll() style="position:absolute;top:250;left:125";>
+<input type=submit value=Save style="position:absolute;top:250;left:210";>
+</form>
+</body>
+</html>
